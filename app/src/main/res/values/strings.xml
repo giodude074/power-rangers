@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PetFindr</string>
+    <string name="about_text">"'Timmy' the Tabby
+Identifying marks: heart shaped spot on her tail, one eye black spot, one eye white. Answers to her name. She needs medicine right away, family misses her.
+Last seen: Corner of Fifth st and Elm, Our City, State -  Jan 12th 8:00 a.m.
+Contact (821) 555-1212
+Email: TimmysFamily@gmail.com"
+</string>
+    <string name="Missing">Missing</string>
+    <string name="PostButton">New Post</string>
+</resources>
