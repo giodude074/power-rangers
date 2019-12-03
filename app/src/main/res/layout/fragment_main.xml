@@ -5,13 +5,30 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="727dp"
         android:layout_gravity="center_vertical"
         android:background="#B4009688"
         android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+
+        <TextView
+            android:id="@+id/lost_Pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="182dp"
+            android:layout_marginBottom="668dp"
+            android:fontFamily="@font/rammetto_one"
+            android:text="Lost Pets"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="44sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.151" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

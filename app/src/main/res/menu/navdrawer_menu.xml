@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/randomFragment"
+        android:id="@+id/mainFragmentFragment"
 
-        android:title="Random Number Generator" />
+        android:title="Main" />
     <item
-        android:id="@+id/diceFragment"
+        android:id="@+id/detailFragmentFragment"
 
-        android:title="Roll Dice" />
+        android:title="Detail" />
 
 
     <item
-        android:id="@+id/tipFragment"
+        android:id="@+id/createFragment"
 
-        android:title="Tip Calculator" />
+        android:title="Post" />
 
 
 
