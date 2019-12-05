@@ -3,15 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="727dp"
+        android:layout_gravity="center_vertical"
+        android:background="#B4009688"
+        android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="pet_name"
-        android:text="Name"
-        android:textSize="24sp"
-        tools:text="Pet's Name:" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_name"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_name"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_name"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="595dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="where did you lost"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="442dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
