@@ -9,16 +9,19 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.petfindr.MainFragment"
-        android:label="fragment_main"
+        android:label="Main Screen"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_createFragment"
+            app:destination="@id/createFragment" />
     </fragment>
     <fragment
         android:id="@+id/createFragment"
         android:name="com.example.petfindr.CreateFragment"
-        android:label="fragment_create"
+        android:label="Post"
         tools:layout="@layout/fragment_post" >
         <action
             android:id="@+id/action_createFragment_to_mainFragment"
@@ -27,6 +30,6 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.petfindr.DetailFragment"
-        android:label="fragment_detail"
+        android:label="Detail page"
         tools:layout="@layout/fragment_detail" />
 </navigation>

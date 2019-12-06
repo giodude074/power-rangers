@@ -18,11 +18,12 @@ class CreateFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentPostBinding>(
             inflater,
-            R.layout.fragment_main,
+            R.layout.fragment_post,
             container,
             false
         )
 
+        //
 
 
 
@@ -30,5 +31,12 @@ class CreateFragment : Fragment() {
 
         return binding.root
     }
+
+
+
+
+
+
+
 
 }

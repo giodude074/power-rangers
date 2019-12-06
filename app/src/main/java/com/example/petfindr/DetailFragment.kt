@@ -18,7 +18,7 @@ class DetailFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentDetailBinding>(
             inflater,
-            R.layout.fragment_main,
+            R.layout.fragment_detail,
             container,
             false
         )
