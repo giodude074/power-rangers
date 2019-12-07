@@ -9,9 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.petfindr.databinding.FragmentPostBinding
+import com.google.firebase.database.FirebaseDatabase
 
 class CreateFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,11 +24,34 @@ class CreateFragment : Fragment() {
             false
         )
 
-        //
+
+        val PostButton = binding.postButton
+
+        PostButton.setOnClickListener {view: View->
+            val PetName = binding.nameBox
+            val Location = binding.locationBox
+            val Descrtion = binding.locationBox
 
 
 
-        // Inflate the layout for this fragment
+
+
+        }
+
+        // Write a message to the database
+        val database = FirebaseDatabase.getInstance()
+        val myRef = database.getReference("message")
+
+        myRef.setValue("Hello, World!")
+
+
+
+
+
+
+
+
+
 
         return binding.root
     }
