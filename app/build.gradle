@@ -63,5 +63,6 @@ dependencies {
 }
 
 dependencies {
-    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google:google:5'
 }
