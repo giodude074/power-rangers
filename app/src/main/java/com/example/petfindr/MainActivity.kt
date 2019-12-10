@@ -20,11 +20,6 @@ import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
-    private val TAG = "MainActivity"
-
-    //vars
-    private val mNames = ArrayList<String>()
-    private val mImageUrls = ArrayList<String>()
 
 
     private lateinit var drawerLayout: DrawerLayout
@@ -42,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.navView, navController)
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
 
-        initImageBitmaps() //loads into arraylist
     } //oncreate END
 
     //override this method to tell Android to call navigateUp() in the navigation controller when
@@ -52,32 +46,5 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
-    //RECYCLEVIEW STUFF
-    private fun initImageBitmaps() {
-        Log.d(TAG, "initImageBitmaps: preparing bitmaps.")
 
-        mImageUrls.add("https://i.redd.it/5swrmebtq1n31.jpg")
-        mNames.add("Pixie | Description: white pomeranian, missing a back leg | Location: Beverly Hills")
-
-        mImageUrls.add("https://i.imgur.com/PMlW8iJ.png")
-        mNames.add("Demon | Description: Hairless cat, sweet personality | Location: New York")
-
-        mImageUrls.add("https://i.redd.it/i7kkhi48bwz01.jpg")
-        mNames.add("Pookie | Description: Brown and white bulldog, Shy | Location: Mississipi")
-
-        mImageUrls.add("https://i.redd.it/1foqpktuwr211.jpg")
-        mNames.add("Baxter | Description: Good Boy | Location: Mississippi")
-
-        initRecyclerView()
-    }
-
-    //setting up our recycle view
-    private fun initRecyclerView() {
-        Log.d(TAG, "initRecyclerView: init recyclerview.")
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerv_view)
-
-        val adapter = RecyclerViewAdapter(this, mNames, mImageUrls)
-        recyclerView. setAdapter(adapter)
-        recyclerView.setLayoutManager(LinearLayoutManager(this))
-    }
 }

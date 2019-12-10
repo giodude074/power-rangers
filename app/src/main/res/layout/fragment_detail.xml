@@ -3,10 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/backgound_repeat"
+        android:orientation="vertical"
+        android:tileMode="repeat">
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
