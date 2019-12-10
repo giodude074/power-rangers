@@ -27,6 +27,12 @@
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerv_view"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="262dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

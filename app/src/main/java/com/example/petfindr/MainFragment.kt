@@ -15,6 +15,7 @@ import com.example.petfindr.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
