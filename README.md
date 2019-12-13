@@ -31,7 +31,7 @@ ___
 ![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
 
 ### Nav Bar
-##### Displays all pages we have currently on the app. Click to navigate to the apps or back to the main page.
+##### Displays all pages we have currently on the app. Click to navigate to the pages or back to the main page.
 ___
 ![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
 
