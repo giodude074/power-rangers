@@ -1,6 +1,4 @@
 package com.example.petfindr
-
-import RecyclerViewAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -9,22 +7,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.petfindr.databinding.ActivityMainBinding
 
-import androidx.recyclerview.widget.RecyclerView
-
-import android.util.Log;
-import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
-import java.util.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
-
-    private val TAG = "MainActivity"
-
-    //vars
-    private val mNames = ArrayList<String>()
-    private val mImageUrls = ArrayList<String>()
 
 
     private lateinit var drawerLayout: DrawerLayout
