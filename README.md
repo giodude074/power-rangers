@@ -1,4 +1,5 @@
 Team: Power-Rangers
+#### Team Members: Jesus Garcia, Giovanni Garcia, Ziwei Xiong
 ---
  
 ### APP name: PetFindr
