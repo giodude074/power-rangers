@@ -16,7 +16,6 @@ import com.google.firebase.database.FirebaseDatabase
 import android.view.Gravity
 
 class CreateFragment : Fragment() {
-    var idd :Int= 1
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,28 +28,24 @@ class CreateFragment : Fragment() {
         )
 
 
-        val PostButton = binding.postButton
+        val postButton = binding.postButton
 
-        PostButton.setOnClickListener {view: View->
+        postButton.setOnClickListener {view: View->
 
 
             val database = FirebaseDatabase.getInstance()
-            val petName = name_box.text.toString()
-            val location = location_box.text.toString()
-            val desc = description_box.text.toString()
+            val petName = name_box.text.toString().trim()
+            val location = location_box.text.toString().trim()
+            val desc = description_box.text.toString().trim()
 
-            val myRef = database.getReference("name")
-            val myRef1 = database.getReference("location")
-            val myRef2 = database.getReference("Descritpion")
-//          myRef.setValue(petName)
-//          myRef1.setValue(location)
-//          myRef2.setValue(desc)
+            val myRef = database.getReference("Pets")
+            val uuid = myRef.push().key.toString().trim()
 
 
-            val newid = getItemId()
-            myRef.child("name").child(newid.toString()).setValue(petName)
-            myRef.child("location").child(newid.toString()).setValue(location)
-            myRef.child("Descritpion").child(newid.toString()).setValue(desc)
+
+            myRef.child(uuid).child("Name").setValue((petName))
+            myRef.child(uuid).child("Location").setValue((location))
+            myRef.child(uuid).child("Description").setValue((desc))
 
 
 
@@ -70,33 +65,6 @@ class CreateFragment : Fragment() {
         return binding.root
     }
 
-private fun getItemId():Int{
-
-    idd ++
-    return idd
-}
-
-    //make some dummy data
-    data class Pet(
-        val name: String = "",
-        val description: String = "",
-        val location: String = "",
-        var uuid: String = "")
-
-
-    fun loadDatabase(firebaseData: DatabaseReference) {
-        val availableSalads: List<Pet> = mutableListOf(
-            Pet("Gherkin", "Fresh and delicious","San Gabriel"),
-            Pet("Lettuce", "Easy to prepare","Alhambra"),
-            Pet("Tomato", "Boring but healthy","Los Angels"),
-            Pet("Zucchini", "Healthy and gross","Temple City")
-        )
-        availableSalads.forEach {
-            val key = firebaseData.child("pets").push().key
-            it.uuid = key
-            firebaseData.child("pets").child(key).setValue(it)
-        }
-    }
 }
 
 

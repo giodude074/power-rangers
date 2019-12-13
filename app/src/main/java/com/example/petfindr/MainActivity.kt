@@ -1,6 +1,5 @@
 package com.example.petfindr
 
-import RecyclerViewAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -8,21 +7,17 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.petfindr.databinding.ActivityMainBinding
-
-import androidx.recyclerview.widget.RecyclerView
-
-import android.util.Log;
-import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
-import java.util.ArrayList
+import com.google.firebase.database.*
 
 
 class MainActivity : AppCompatActivity() {
 
-
+    lateinit var ref: DatabaseReference
 
     private lateinit var drawerLayout: DrawerLayout
+
+    lateinit var petList:MutableList<Pet>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
@@ -37,7 +32,53 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.navView, navController)
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
 
-    } //oncreate END
+        val database = FirebaseDatabase.getInstance()
+        val ref = database.getReference("Pets")
+        petList= mutableListOf()
+
+
+        ref.addValueEventListener(object : ValueEventListener{
+            override fun onCancelled(p0: DatabaseError) {
+
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                if(p0!!.exists()){
+                    for (h in p0.children){
+                        val pet = h.getValue(Pet::class.java)
+                        petList.add(pet!!)
+
+                    }
+
+
+                }
+
+
+            }
+
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    //oncreate END
 
     //override this method to tell Android to call navigateUp() in the navigation controller when
     //up button is pressed

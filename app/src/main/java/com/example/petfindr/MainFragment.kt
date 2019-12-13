@@ -1,25 +1,23 @@
 package com.example.petfindr
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
+import android.provider.ContactsContract
+import android.renderscript.Sampler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
 import com.example.petfindr.databinding.FragmentMainBinding
-import java.util.ArrayList
-import RecyclerViewAdapter
-import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-
+import com.google.firebase.database.ValueEventListener
 
 
 class MainFragment : Fragment() {
-
+    lateinit var petList: MutableList<Pet>
+    lateinit var ref:DatabaseReference
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,12 +28,14 @@ class MainFragment : Fragment() {
             container,
             false
         )
+        val database = FirebaseDatabase.getInstance()
+        petList= mutableListOf()
+
+        val ref = database.getReference("Pets")
 
 
 
-
-
-
+        val listView = binding.listviewPets
 
 
 
