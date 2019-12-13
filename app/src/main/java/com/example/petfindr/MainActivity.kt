@@ -8,13 +8,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.petfindr.databinding.ActivityMainBinding
-
 import androidx.recyclerview.widget.RecyclerView
-
 import android.util.Log;
-import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
 
@@ -42,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.navView, navController)
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
 
+
+
         initImageBitmaps() //loads into arraylist
     } //oncreate END
 
@@ -63,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         mNames.add("Demon | Description: Hairless cat, sweet personality | Location: New York")
 
         mImageUrls.add("https://i.redd.it/i7kkhi48bwz01.jpg")
-        mNames.add("Pookie | Description: Brown and white bulldog, Shy | Location: Mississipi")
+        mNames.add("Pookie | Description: Brown and white bulldog, Shy | Location: Mississippi")
 
         mImageUrls.add("https://i.redd.it/1foqpktuwr211.jpg")
         mNames.add("Baxter | Description: Good Boy | Location: Mississippi")
