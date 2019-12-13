@@ -19,16 +19,18 @@ Team: Power-Rangers
 * Constraintlayout
 ____
 ## Screenshots:
+ Main Screen
+![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
 
-![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG) Main Screen
+Nav Bar
+![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
 
+Post Page
+![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) 
 
-![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG ) Nav Bar
+Splash Page
+![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png) 
 
-![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) Post Page
-
- 
-![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png) Splash Page
 
 
 ## Video demo:
