@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/logo_icon_transperant"
+    android:width="10dp"
+    android:height="10dp"
+    android:scaleType="fitCenter"
+    />
