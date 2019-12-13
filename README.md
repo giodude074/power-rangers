@@ -12,29 +12,33 @@ Team: Power-Rangers
 
 
 ## Tech we use:
-* Designd logos and Splash page.
+* Designed logos and Splash page.
 * Fragments
 * Firebase Realtime database
 * RecyclerView
 * Constraintlayout
 ____
 ## Screenshots:
-#### Main Screen
-___
-![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
 
-#### Nav Bar
-___
-![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
-
-#### Post Page
-___
-![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) 
-
-#### Splash Page
+### Splash Page
+##### Displays when you open the app, contains the loading icon. 
 ___
 ![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png) 
 
+### Main Screen
+##### Displays all current missing pets that users have submited. RecyclerView was used, Grabs content from firebase. When you click each post, you get more detailed infromation on the missing pets and how to contact the owners.
+___
+![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
+
+### Nav Bar
+##### Displays all pages we have currently on the app. Click to navigate to the apps or back to the main page.
+___
+![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
+
+### Post Page
+##### Adds new post to main page. Updates firebase.
+___
+![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) 
 
 
 ## Video demo:
