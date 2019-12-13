@@ -22,14 +22,13 @@ ____
 Main screen: 
 ![alt text](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG "Logo Title Text 1")
 
-
-Main screen: 
+Navbar: 
 ![alt text](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG "Logo Title Text 1")
 
-Main screen: 
+Post Page: 
 ![alt text](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG "Logo Title Text 1")
 
-Main screen: 
+Splash: 
 ![alt text](https://github.com/giodude074/power-rangers/raw/images/splash.PNG "Logo Title Text 1")
 
 
