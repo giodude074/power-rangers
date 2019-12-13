@@ -20,15 +20,15 @@ Team: Power-Rangers
 ____
 ## Screenshots:
 
-![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
+![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG) Main Screen
 
 
-![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
+![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG ) Nav Bar
 
-![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG)
+![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) Post Page
 
  
-![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png)
+![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png) Splash Page
 
 
 ## Video demo:
