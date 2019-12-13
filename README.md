@@ -1,7 +1,7 @@
 Team: Power-Rangers
 ---
  
-### App name: PetFindr
+### APP name: PetFindr
 
 ### Purpose of our App:
 * Help people to find their lost pet.
@@ -11,7 +11,7 @@ Team: Power-Rangers
  * Users are able to post new information(Pet's name, locaion and description) regarding the lost pet.
 
 
-## Technically Intersting Points:
+## Tech we use:
 * Designd logos and Splash page.
 * Fragments
 * Firebase Realtime database
@@ -19,19 +19,16 @@ Team: Power-Rangers
 * Constraintlayout
 ____
 ## Screenshots:
-Main screen: 
-![alt text](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG "Logo Title Text 1")
 
-Navbar: 
-![alt text](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG "Logo Title Text 1")
-
-Post Page: 
-![alt text](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG "Logo Title Text 1")
-
-Splash: 
-![alt text](https://github.com/giodude074/power-rangers/raw/images/splash.PNG "Logo Title Text 1")
+![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
 
 
+![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
+
+![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG)
+
+ 
+![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png)
 
 
 ## Video demo:
