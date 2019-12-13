@@ -3,16 +3,12 @@ Team: Power-Rangers
  
 ### App name: PetFindr
 
-Inline-style: 
-!Logo(https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-
 ### Purpose of our App:
 * Help people to find their lost pet.
 
 ## What are the main functions?
  * Users are able to see all the lost pet informations that posted from database.
- * Users are able to post new information regarding the lost pet.
+ * Users are able to post new information(Pet's name, locaion and description) regarding the lost pet.
 
 
 ## Technically Intersting Points:
@@ -20,21 +16,21 @@ Inline-style:
 * Fragments
 * Firebase Realtime database
 * RecyclerView
-
-
+* Constraintlayout
 ____
 ## Screenshots:
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Main screen: 
+![alt text](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG "Logo Title Text 1")
 
 
+Main screen: 
+![alt text](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG "Logo Title Text 1")
 
+Main screen: 
+![alt text](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG "Logo Title Text 1")
 
-
-
-
-
-
+Main screen: 
+![alt text](https://github.com/giodude074/power-rangers/raw/images/splash.PNG "Logo Title Text 1")
 
 
 
