@@ -19,16 +19,20 @@ Team: Power-Rangers
 * Constraintlayout
 ____
 ## Screenshots:
- Main Screen
+#### Main Screen
+___
 ![Main](https://github.com/giodude074/power-rangers/raw/images/main_fragment.PNG)
 
-Nav Bar
+#### Nav Bar
+___
 ![Navbar](https://github.com/giodude074/power-rangers/raw/images/navbar.PNG )
 
-Post Page
+#### Post Page
+___
 ![Post](https://github.com/giodude074/power-rangers/raw/images/new_post.PNG) 
 
-Splash Page
+#### Splash Page
+___
 ![splash](https://github.com/giodude074/power-rangers/raw/images/splash.png) 
 
 
