@@ -1,6 +1,7 @@
-# Team: Power-Rangers
-# App name: Pet finder
+Team: Power-Rangers
  -------
+ 
+## App name: Pet finder
 ## Purpose of our App:
 * Help people to find lost pet.
 
@@ -24,6 +25,6 @@ Screenshots:
 
 
 -------
-version 1.5
-CS4540 Android Project
-Team Members: Jesus Garcia, Gio Garcia, Ziwei Xiong
+#### Version 1.5
+#### CS4540 Android Project
+#### Team Members: Jesus Garcia, Gio Garcia, Ziwei Xiong
